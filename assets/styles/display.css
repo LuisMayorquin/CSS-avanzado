@@ -1,0 +1,66 @@
+/* propiedad display
+Nos sirve para controla como se muestra un elemento dentro de un documento.
+Esta propiedad es distinta de position porque display se encarga de definir como se muestran u ocultan elementos, no se elimina el codigo.
+
+Valores de la propiedad display
+-none
+-inline
+-block
+-inline-block
+
+*/
+
+/* estilos generales*/
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilos para los articulos*/
+#articulo1 {
+    margin: 20px;
+    padding: 20px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    
+}
+
+#articulo2 {
+    margin: 20px;
+    padding: 20px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    display: none;
+}
+
+#articulo3 {
+    margin: 20px;
+    padding: 20px;
+    background-color: gainsboro;
+    border: 1px solid black;
+}
+
+div ul li{
+    display: inline;
+    margin: 30px;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* valor none
+hace que el elemento se oculte completamente y que no ocupe espacio en la pagina, no se elimina, este valor se usa para ocultar elementos debido a la interaccion con la ventana del navegador.
+Por ejemplo un menu oculto cuando la ventana se hace peque;a
+
+/////////////////////////////////////////
+
+inline
+es el valor por defect, hace que el elemento se muestre en linea con el texto que lo rodea.
+/////////////////////////////////////////
+
+block
+
+*/

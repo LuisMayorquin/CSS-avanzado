@@ -1,0 +1,110 @@
+/*Estilos generales*/
+body {
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Estilo para las imagenes */
+
+img {
+    width: 10%;
+}
+
+/* estilo a todo el contenedor de productos*/
+.contenedorproductos {
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid green;
+    background-color: rgb(219, 244, 244);
+}
+
+/* estilo a un producto individual*/
+#producto1 {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    position: static;
+}
+
+#producto2 {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    /* position: relative;
+    top: 200px; */
+    /* position: absolute;
+    top: 200px; */
+}
+
+#producto3 {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+/*estilos para el boton de inicio*/
+#botonInicio{
+    position: fixed;
+    font-size: 30px;
+}
+
+#titulo {
+    position: sticky;
+    top: 1px;
+}
+
+
+
+
+/* 
+Propiedad position
+
+En CSS la priopiedad de position nos sirve para controlar la posicion de un elemento en una pagina web, y toma como consideracion su posicion dentro del document y como se interpreta en el flujo de trabajo (de arrib a abajo y de izquierda a derecha)
+Con esta propiedad del uso indiscriminado del margin y padding.
+
+
+VALORES QUE TRABAJAN CON POSITION
+-static
+-relative
+-absolute
+-flexed
+-sticky
+
+*/
+
+/*
+Static
+es el valor por defecto de todos los elementos que ponemos en el documneto
+este respeta el flujo normal de trabajo, es decir, se posiciona en el lugar que corresponde conforme a como se lee el documento, no se puede modificar con valores de margen en top, bottom, right, left
+
+Caso de uso, resumen de compra de un carrito de compra
+//////////////////////////////////////
+
+Valor Relative
+Podemos posicionar un elemento respecto al flujo normal de trabajo (arriba, abajo, izquierda, derecha)
+se puede decir que vamos a colocar el elemento tomando una posicion desde la esquina superior izquierda del contenedor 
+podemos usar left, right, top y bottom para modificar la posicion conla ventaja que modificar estos valores no rompe el flujo normal de trabajo, es decir cuando hacemos el ajuste el elemento se mueve y deja el espacio vacio
+
+caso de uso, un boton para ver el detalle del producto que podemos mover a nuestro antojo
+
+///////////////////////////////////////////
+Valor Absolute
+Cuando usamos el valor absolute, hacemos que nuestro elemento no este dentro del flujo normal  del documento, quiere decir que si se modifican los elementos que si esten al rededor del absolute, quiere decir que si modificamos no dejamos huecos entre elementos 
+///////////////////////////////////////////////
+
+valor fixed
+este hace que el elemento salga del flujo normal del documento, toma como referencia al viewport o tamano de la pantalla, es decir, no le hace caso a nadie mas que a la pantalla
+Independientemente de si hacemos scroll o no, incluso el tama;o de la pantalla, el boton se queda fijo.
+///////////////////////////////////////////////
+
+valor sticky
+cuando usamos un elemento con esta propiedad primero se comporta como un relativo, respeta el flujo del document, pero cuando pasa algo se activa y se queda quieto cuando ocurre una situacion especial (tamano de pixeles) cambia su comportamiento y se comporta como un fixed.
+
+caso de uso- en las barras de navegacion, menus, que se quedan pegadas cuando se scrollea la pagina.
+
+*/
+
